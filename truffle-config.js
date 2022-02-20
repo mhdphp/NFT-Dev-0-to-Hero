@@ -10,11 +10,11 @@ module.exports = {
     },
 
      // since we have change the place of contracts from the root into src/contracts
-     contracts_directory: "./scr/contracts",
+     contracts_directory: "./src/contracts/",
 
      // The json interface is a json object describing the Application Binary Interface (ABI) for an Ethereum smart contract.
      // the folder does't exist but will be created
-     contracts_build_directory: "./src/abis",
+     contracts_build_directory: "./src/abis/",
   
     // Configure your compilers
     compilers: {

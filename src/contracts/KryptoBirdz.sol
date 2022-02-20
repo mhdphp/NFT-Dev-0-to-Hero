@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity ^0.8.11;
 
 contract Kryptobird {
 
@@ -7,7 +7,7 @@ contract Kryptobird {
     string public symbol;
 
     constructor() {
-        name = "Kryptobird";
-        symbol = "Kbirdz";
+        name = "KryptoBird";
+        symbol = "KBIRDZ";
     }
 }
