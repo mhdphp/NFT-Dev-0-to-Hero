@@ -17,7 +17,7 @@ contract Migrations {
     last_completed_migration = completed;
   }
 
-  // We need to make the Migrations contract updatable to the newAddress
+  // make Migrations contract updatable to the new address
   function upgrade(address new_address) public restricted {
     Migrations upgraded = Migrations(new_address);
     upgraded.setCompleted(last_completed_migration);
