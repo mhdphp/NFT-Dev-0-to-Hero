@@ -4,7 +4,7 @@ pragma solidity ^0.8.11;
 import './ERC721Connector.sol';
 
 // inherit all contracts from ERC721Connector
-contract Kryptobird is ERC721Connector {
+contract KryptoBird is ERC721Connector {
 
     // array to store our nfts
     string[] public kryptoBirdz;
