@@ -107,9 +107,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC721Connector.sol\":\"ERC721Connector\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC721.sol\":{\"keccak256\":\"0xbaa5b115464ba0259b52171945db323008c014ac288457bf144606f3b608cf11\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0f891dbe8b28f82a2f5dbf4fae539a2ad9814a18f06a8fa19603d53006b8aff0\",\"dweb:/ipfs/QmWFWfwbENJLawgMKAAW96diUMWeXdsPnb8qhahRWuqL3C\"]},\"project:/src/contracts/ERC721Connector.sol\":{\"keccak256\":\"0x2492a686d93c27840e13bf04435ffaac0cd63edfb0e55bd2f6d522c4a4d9e230\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b693d4bb19c5dafd59a0a22af32fe721c4e491293587a3f5350d3529dd8f2e0a\",\"dweb:/ipfs/QmXoQv79fF1tYjNk3HTUnQNNPZ3KohtPSK5MLbCbx3yvv2\"]},\"project:/src/contracts/ERC721Metadata.sol\":{\"keccak256\":\"0x5ce82012948f44a9b12a06267ff96b6e335b8fb7c11d26e1a8a7db45cbccfd6c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c0eae0276f0c21076a391ed039bb8024168c8510f3044c0ad3e4ddfd90b4c85a\",\"dweb:/ipfs/QmVSDAt8rH6Z8LH5vGvswDfmNZjCdfGyigAWUBHr7N1sbx\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516106c13803806106c183398101604081905261002f916101d8565b815182908290610046906000906020850190610064565b50805161005a906001906020840190610064565b505050505061028f565b8280546100709061023b565b90600052602060002090601f01602090048101928261009257600085556100d8565b82601f106100ab57805160ff19168380011785556100d8565b828001600101855582156100d8579182015b828111156100d85782518255916020019190600101906100bd565b506100e49291506100e8565b5090565b5b808211156100e457600081556001016100e9565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600082601f83011261013d57600080fd5b81516001604060020a0380821115610157576101576100fd565b604051601f8301601f19908116603f0116810190828211818310171561017f5761017f6100fd565b8160405283815260209250868385880101111561019b57600080fd5b600091505b838210156101bd57858201830151818301840152908201906101a0565b838211156101ce5760008385830101525b9695505050505050565b600080604083850312156101eb57600080fd5b82516001604060020a038082111561020257600080fd5b61020e8683870161012c565b9350602085015191508082111561022457600080fd5b506102318582860161012c565b9150509250929050565b60028104600182168061024f57607f821691505b60208210811415610289577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b50919050565b6104238061029e6000396000f3fe608060405234801561001057600080fd5b5060043610610068577c0100000000000000000000000000000000000000000000000000000000600035046306fdde03811461006d5780636352211e1461008b57806370a08231146100c357806395d89b41146100e4575b600080fd5b6100756100ec565b60405161008291906102ee565b60405180910390f35b61009e610099366004610343565b61017e565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610082565b6100d66100d136600461035c565b610237565b604051908152602001610082565b6100756102df565b6060600080546100fb90610399565b80601f016020809104026020016040519081016040528092919081815260200182805461012790610399565b80156101745780601f1061014957610100808354040283529160200191610174565b820191906000526020600020905b81548152906001019060200180831161015757829003601f168201915b5050505050905090565b60008181526002602052604081205473ffffffffffffffffffffffffffffffffffffffff1661020e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601d60248201527f6f776e657220616464726573732073686f756c64206e6f74206265203000000060448201526064015b60405180910390fd5b5060009081526002602052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600073ffffffffffffffffffffffffffffffffffffffff82166102b6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f5f6f776e657220616464726573732073686f756c64206e6f74206265203000006044820152606401610205565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526003602052604090205490565b6060600180546100fb90610399565b600060208083528351808285015260005b8181101561031b578581018301518582016040015282016102ff565b8181111561032d576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561035557600080fd5b5035919050565b60006020828403121561036e57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461039257600080fd5b9392505050565b6002810460018216806103ad57607f821691505b602082108114156103e7577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b5091905056fea2646970667358221220c099509d0dc8a7f34b4da2c09263f52d355fdd35dc6a647758ecfde49c4fcb9c64736f6c634300080b0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610068577c0100000000000000000000000000000000000000000000000000000000600035046306fdde03811461006d5780636352211e1461008b57806370a08231146100c357806395d89b41146100e4575b600080fd5b6100756100ec565b60405161008291906102ee565b60405180910390f35b61009e610099366004610343565b61017e565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610082565b6100d66100d136600461035c565b610237565b604051908152602001610082565b6100756102df565b6060600080546100fb90610399565b80601f016020809104026020016040519081016040528092919081815260200182805461012790610399565b80156101745780601f1061014957610100808354040283529160200191610174565b820191906000526020600020905b81548152906001019060200180831161015757829003601f168201915b5050505050905090565b60008181526002602052604081205473ffffffffffffffffffffffffffffffffffffffff1661020e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601d60248201527f6f776e657220616464726573732073686f756c64206e6f74206265203000000060448201526064015b60405180910390fd5b5060009081526002602052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600073ffffffffffffffffffffffffffffffffffffffff82166102b6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f5f6f776e657220616464726573732073686f756c64206e6f74206265203000006044820152606401610205565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526003602052604090205490565b6060600180546100fb90610399565b600060208083528351808285015260005b8181101561031b578581018301518582016040015282016102ff565b8181111561032d576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561035557600080fd5b5035919050565b60006020828403121561036e57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461039257600080fd5b9392505050565b6002810460018216806103ad57607f821691505b602082108114156103e7577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b5091905056fea2646970667358221220c099509d0dc8a7f34b4da2c09263f52d355fdd35dc6a647758ecfde49c4fcb9c64736f6c634300080b0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC721Connector.sol\":\"ERC721Connector\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC721.sol\":{\"keccak256\":\"0x092bd0cb2db44406c2448dbb9b8a2d50f54afbfafcf4aa1da80b876f7de9491f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b76ef2fd626526ca350a0e5cd174ddffc06ed29b8d732b42fe356cba70b09f31\",\"dweb:/ipfs/QmU4g4JjYvjotf1zcq63PjBZ9rC3PnvnG2AdCCyBGuv7bN\"]},\"project:/src/contracts/ERC721Connector.sol\":{\"keccak256\":\"0x2492a686d93c27840e13bf04435ffaac0cd63edfb0e55bd2f6d522c4a4d9e230\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b693d4bb19c5dafd59a0a22af32fe721c4e491293587a3f5350d3529dd8f2e0a\",\"dweb:/ipfs/QmXoQv79fF1tYjNk3HTUnQNNPZ3KohtPSK5MLbCbx3yvv2\"]},\"project:/src/contracts/ERC721Metadata.sol\":{\"keccak256\":\"0x5ce82012948f44a9b12a06267ff96b6e335b8fb7c11d26e1a8a7db45cbccfd6c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c0eae0276f0c21076a391ed039bb8024168c8510f3044c0ad3e4ddfd90b4c85a\",\"dweb:/ipfs/QmVSDAt8rH6Z8LH5vGvswDfmNZjCdfGyigAWUBHr7N1sbx\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161069f38038061069f83398101604081905261002f916101d8565b815182908290610046906000906020850190610064565b50805161005a906001906020840190610064565b505050505061028f565b8280546100709061023b565b90600052602060002090601f01602090048101928261009257600085556100d8565b82601f106100ab57805160ff19168380011785556100d8565b828001600101855582156100d8579182015b828111156100d85782518255916020019190600101906100bd565b506100e49291506100e8565b5090565b5b808211156100e457600081556001016100e9565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600082601f83011261013d57600080fd5b81516001604060020a0380821115610157576101576100fd565b604051601f8301601f19908116603f0116810190828211818310171561017f5761017f6100fd565b8160405283815260209250868385880101111561019b57600080fd5b600091505b838210156101bd57858201830151818301840152908201906101a0565b838211156101ce5760008385830101525b9695505050505050565b600080604083850312156101eb57600080fd5b82516001604060020a038082111561020257600080fd5b61020e8683870161012c565b9350602085015191508082111561022457600080fd5b506102318582860161012c565b9150509250929050565b60028104600182168061024f57607f821691505b60208210811415610289577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b50919050565b6104018061029e6000396000f3fe608060405234801561001057600080fd5b5060043610610068577c0100000000000000000000000000000000000000000000000000000000600035046306fdde03811461006d5780636352211e1461008b57806370a08231146100c357806395d89b41146100e4575b600080fd5b6100756100ec565b60405161008291906102cc565b60405180910390f35b61009e610099366004610321565b61017e565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610082565b6100d66100d136600461033a565b610215565b604051908152602001610082565b6100756102bd565b6060600080546100fb90610377565b80601f016020809104026020016040519081016040528092919081815260200182805461012790610377565b80156101745780601f1061014957610100808354040283529160200191610174565b820191906000526020600020905b81548152906001019060200180831161015757829003601f168201915b5050505050905090565b60008181526002602052604081205473ffffffffffffffffffffffffffffffffffffffff168061020f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601d60248201527f6f776e657220616464726573732073686f756c64206e6f74206265203000000060448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff8216610294576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f5f6f776e657220616464726573732073686f756c64206e6f74206265203000006044820152606401610206565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526003602052604090205490565b6060600180546100fb90610377565b600060208083528351808285015260005b818110156102f9578581018301518582016040015282016102dd565b8181111561030b576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561033357600080fd5b5035919050565b60006020828403121561034c57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461037057600080fd5b9392505050565b60028104600182168061038b57607f821691505b602082108114156103c5577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b5091905056fea26469706673582212200190345bd0f66e51cb49bd2bcb456d65a203cc9f5a2629aea99602c33783ca3764736f6c634300080b0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610068577c0100000000000000000000000000000000000000000000000000000000600035046306fdde03811461006d5780636352211e1461008b57806370a08231146100c357806395d89b41146100e4575b600080fd5b6100756100ec565b60405161008291906102cc565b60405180910390f35b61009e610099366004610321565b61017e565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610082565b6100d66100d136600461033a565b610215565b604051908152602001610082565b6100756102bd565b6060600080546100fb90610377565b80601f016020809104026020016040519081016040528092919081815260200182805461012790610377565b80156101745780601f1061014957610100808354040283529160200191610174565b820191906000526020600020905b81548152906001019060200180831161015757829003601f168201915b5050505050905090565b60008181526002602052604081205473ffffffffffffffffffffffffffffffffffffffff168061020f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601d60248201527f6f776e657220616464726573732073686f756c64206e6f74206265203000000060448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff8216610294576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f5f6f776e657220616464726573732073686f756c64206e6f74206265203000006044820152606401610206565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526003602052604090205490565b6060600180546100fb90610377565b600060208083528351808285015260005b818110156102f9578581018301518582016040015282016102dd565b8181111561030b576000604083870101525b50601f01601f1916929092016040019392505050565b60006020828403121561033357600080fd5b5035919050565b60006020828403121561034c57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461037057600080fd5b9392505050565b60028104600182168061038b57607f821691505b602082108114156103c5577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b5091905056fea26469706673582212200190345bd0f66e51cb49bd2bcb456d65a203cc9f5a2629aea99602c33783ca3764736f6c634300080b0033",
   "immutableReferences": {},
   "generatedSources": [
     {
@@ -3644,28 +3644,28 @@
     }
   ],
   "sourceMap": "119:156:1:-:0;;;179:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;222:13:2;;248:4:1;;254:6;;222:13:2;;:5;;:13;;;;;:::i;:::-;-1:-1:-1;246:21:2;;;;:7;;:21;;;;;:::i;:::-;;152:123;;179:93:1;;119:156;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;119:156:1;;;-1:-1:-1;119:156:1;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:184:5;66:77;63:1;56:88;163:4;160:1;153:15;187:4;184:1;177:15;203:885;257:5;310:3;303:4;295:6;291:17;287:27;277:55;;328:1;325;318:12;277:55;357:6;351:13;-1:-1:-1;;;;;420:2:5;416;413:10;410:36;;;426:18;;:::i;:::-;501:2;495:9;469:2;555:13;;-1:-1:-1;;551:22:5;;;575:2;547:31;543:40;531:53;;;599:18;;;619:22;;;596:46;593:72;;;645:18;;:::i;:::-;685:10;681:2;674:22;720:2;712:6;705:18;742:4;732:14;;787:3;782:2;777;769:6;765:15;761:24;758:33;755:53;;;804:1;801;794:12;755:53;826:1;817:10;;836:133;850:2;847:1;844:9;836:133;;;938:14;;;934:23;;928:30;907:14;;;903:23;;896:63;861:10;;;;836:133;;;987:2;984:1;981:9;978:80;;;1046:1;1041:2;1036;1028:6;1024:15;1020:24;1013:35;978:80;1076:6;203:885;-1:-1:-1;;;;;;203:885:5:o;1093:562::-;1192:6;1200;1253:2;1241:9;1232:7;1228:23;1224:32;1221:52;;;1269:1;1266;1259:12;1221:52;1302:9;1296:16;-1:-1:-1;;;;;1372:2:5;1364:6;1361:14;1358:34;;;1388:1;1385;1378:12;1358:34;1411:61;1464:7;1455:6;1444:9;1440:22;1411:61;:::i;:::-;1401:71;;1518:2;1507:9;1503:18;1497:25;1481:41;;1547:2;1537:8;1534:16;1531:36;;;1563:1;1560;1553:12;1531:36;;1586:63;1641:7;1630:8;1619:9;1615:24;1586:63;:::i;:::-;1576:73;;;1093:562;;;;;:::o;1660:437::-;1745:1;1735:12;;1792:1;1782:12;;;1803:61;;1857:4;1849:6;1845:17;1835:27;;1803:61;1910:2;1902:6;1899:14;1879:18;1876:38;1873:218;;;1947:77;1944:1;1937:88;2048:4;2045:1;2038:15;2076:4;2073:1;2066:15;1873:218;;1660:437;;;:::o;:::-;119:156:1;;;;;;",
-  "deployedSourceMap": "119:156:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:83:2;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1747:201:0;;;;;;:::i;:::-;;:::i;:::-;;;977:42:5;965:55;;;947:74;;935:2;920:18;1747:201:0;801:226:5;1291:191:0;;;;;;:::i;:::-;;:::i;:::-;;;1492:25:5;;;1480:2;1465:18;1291:191:0;1346:177:5;551:87:2;;;:::i;460:83::-;498:13;530:5;523:12;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:83;:::o;1747:201:0:-;1805:7;1832:21;;;:11;:21;;;;;;:35;:21;1824:77;;;;;;;2172:2:5;1824:77:0;;;2154:21:5;2211:2;2191:18;;;2184:30;2250:31;2230:18;;;2223:59;2299:18;;1824:77:0;;;;;;;;;-1:-1:-1;1919:21:0;;;;:11;:21;;;;;;;;;1747:201::o;1291:191::-;1349:7;1376:20;;;1368:63;;;;;;;2530:2:5;1368:63:0;;;2512:21:5;2569:2;2549:18;;;2542:30;2608:32;2588:18;;;2581:60;2658:18;;1368:63:0;2328:354:5;1368:63:0;-1:-1:-1;1449:25:0;;;;;;:17;:25;;;;;;;1291:191::o;551:87:2:-;591:13;623:7;616:14;;;;;:::i;14:597:5:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;452:6;449:1;446:13;443:91;;;522:1;517:2;508:6;497:9;493:22;489:31;482:42;443:91;-1:-1:-1;595:2:5;574:15;-1:-1:-1;;570:29:5;555:45;;;;602:2;551:54;;14:597;-1:-1:-1;;;14:597:5:o;616:180::-;675:6;728:2;716:9;707:7;703:23;699:32;696:52;;;744:1;741;734:12;696:52;-1:-1:-1;767:23:5;;616:180;-1:-1:-1;616:180:5:o;1032:309::-;1091:6;1144:2;1132:9;1123:7;1119:23;1115:32;1112:52;;;1160:1;1157;1150:12;1112:52;1199:9;1186:23;1249:42;1242:5;1238:54;1231:5;1228:65;1218:93;;1307:1;1304;1297:12;1218:93;1330:5;1032:309;-1:-1:-1;;;1032:309:5:o;1528:437::-;1613:1;1603:12;;1660:1;1650:12;;;1671:61;;1725:4;1717:6;1713:17;1703:27;;1671:61;1778:2;1770:6;1767:14;1747:18;1744:38;1741:218;;;1815:77;1812:1;1805:88;1916:4;1913:1;1906:15;1944:4;1941:1;1934:15;1741:218;;1528:437;;;:::o",
+  "deployedSourceMap": "119:156:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:83:2;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1747:217:0;;;;;;:::i;:::-;;:::i;:::-;;;977:42:5;965:55;;;947:74;;935:2;920:18;1747:217:0;801:226:5;1291:191:0;;;;;;:::i;:::-;;:::i;:::-;;;1492:25:5;;;1480:2;1465:18;1291:191:0;1346:177:5;551:87:2;;;:::i;460:83::-;498:13;530:5;523:12;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:83;:::o;1747:217:0:-;1805:7;1840:21;;;:11;:21;;;;;;;;1880:19;1872:61;;;;;;;2172:2:5;1872:61:0;;;2154:21:5;2211:2;2191:18;;;2184:30;2250:31;2230:18;;;2223:59;2299:18;;1872:61:0;;;;;;;;;1951:5;1747:217;-1:-1:-1;;1747:217:0:o;1291:191::-;1349:7;1376:20;;;1368:63;;;;;;;2530:2:5;1368:63:0;;;2512:21:5;2569:2;2549:18;;;2542:30;2608:32;2588:18;;;2581:60;2658:18;;1368:63:0;2328:354:5;1368:63:0;-1:-1:-1;1449:25:0;;;;;;:17;:25;;;;;;;1291:191::o;551:87:2:-;591:13;623:7;616:14;;;;;:::i;14:597:5:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;452:6;449:1;446:13;443:91;;;522:1;517:2;508:6;497:9;493:22;489:31;482:42;443:91;-1:-1:-1;595:2:5;574:15;-1:-1:-1;;570:29:5;555:45;;;;602:2;551:54;;14:597;-1:-1:-1;;;14:597:5:o;616:180::-;675:6;728:2;716:9;707:7;703:23;699:32;696:52;;;744:1;741;734:12;696:52;-1:-1:-1;767:23:5;;616:180;-1:-1:-1;616:180:5:o;1032:309::-;1091:6;1144:2;1132:9;1123:7;1119:23;1115:32;1112:52;;;1160:1;1157;1150:12;1112:52;1199:9;1186:23;1249:42;1242:5;1238:54;1231:5;1228:65;1218:93;;1307:1;1304;1297:12;1218:93;1330:5;1032:309;-1:-1:-1;;;1032:309:5:o;1528:437::-;1613:1;1603:12;;1660:1;1650:12;;;1671:61;;1725:4;1717:6;1713:17;1703:27;;1671:61;1778:2;1770:6;1767:14;1747:18;1744:38;1741:218;;;1815:77;1812:1;1805:88;1916:4;1913:1;1906:15;1944:4;1941:1;1934:15;1741:218;;1528:437;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.11;\r\n\r\nimport './ERC721Metadata.sol';\r\nimport './ERC721.sol';\r\n\r\ncontract ERC721Connector is ERC721Metadata, ERC721 {\r\n\r\n    constructor(string memory name, string memory symbol) ERC721Metadata(name, symbol) {\r\n\r\n    }\r\n}\r\n",
   "sourcePath": "F:\\Crypto Courses\\The Complete NFT Web Development Course - Zero To Expert\\Project NFT\\nft-marketplace-starter-kit\\src\\contracts\\ERC721Connector.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/ERC721Connector.sol",
     "exportedSymbols": {
       "ERC721": [
-        134
+        136
       ],
       "ERC721Connector": [
-        155
+        157
       ],
       "ERC721Metadata": [
-        194
+        196
       ]
     },
-    "id": 156,
+    "id": 158,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 136,
+        "id": 138,
         "literals": [
           "solidity",
           "^",
@@ -3678,11 +3678,11 @@
       {
         "absolutePath": "project:/src/contracts/ERC721Metadata.sol",
         "file": "./ERC721Metadata.sol",
-        "id": 137,
+        "id": 139,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 156,
-        "sourceUnit": 195,
+        "scope": 158,
+        "sourceUnit": 197,
         "src": "61:30:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3690,11 +3690,11 @@
       {
         "absolutePath": "project:/src/contracts/ERC721.sol",
         "file": "./ERC721.sol",
-        "id": 138,
+        "id": 140,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 156,
-        "sourceUnit": 135,
+        "scope": 158,
+        "sourceUnit": 137,
         "src": "93:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3704,25 +3704,25 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 139,
+              "id": 141,
               "name": "ERC721Metadata",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 194,
+              "referencedDeclaration": 196,
               "src": "147:14:1"
             },
-            "id": 140,
+            "id": 142,
             "nodeType": "InheritanceSpecifier",
             "src": "147:14:1"
           },
           {
             "baseName": {
-              "id": 141,
+              "id": 143,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 134,
+              "referencedDeclaration": 136,
               "src": "163:6:1"
             },
-            "id": 142,
+            "id": 144,
             "nodeType": "InheritanceSpecifier",
             "src": "163:6:1"
           }
@@ -3731,11 +3731,11 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 155,
+        "id": 157,
         "linearizedBaseContracts": [
-          155,
-          134,
-          194
+          157,
+          136,
+          196
         ],
         "name": "ERC721Connector",
         "nameLocation": "128:15:1",
@@ -3743,23 +3743,23 @@
         "nodes": [
           {
             "body": {
-              "id": 153,
+              "id": 155,
               "nodeType": "Block",
               "src": "262:10:1",
               "statements": []
             },
-            "id": 154,
+            "id": 156,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 149,
+                    "id": 151,
                     "name": "name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 144,
+                    "referencedDeclaration": 146,
                     "src": "248:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -3767,11 +3767,11 @@
                     }
                   },
                   {
-                    "id": 150,
+                    "id": 152,
                     "name": "symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 146,
+                    "referencedDeclaration": 148,
                     "src": "254:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -3779,13 +3779,13 @@
                     }
                   }
                 ],
-                "id": 151,
+                "id": 153,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 148,
+                  "id": 150,
                   "name": "ERC721Metadata",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 194,
+                  "referencedDeclaration": 196,
                   "src": "233:14:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -3796,17 +3796,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 147,
+              "id": 149,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 144,
+                  "id": 146,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "205:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 154,
+                  "scope": 156,
                   "src": "191:18:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3815,7 +3815,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 143,
+                    "id": 145,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:6:1",
@@ -3828,12 +3828,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 146,
+                  "id": 148,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "225:6:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 154,
+                  "scope": 156,
                   "src": "211:20:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3842,7 +3842,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 145,
+                    "id": 147,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "211:6:1",
@@ -3857,19 +3857,19 @@
               "src": "190:42:1"
             },
             "returnParameters": {
-              "id": 152,
+              "id": 154,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "262:0:1"
             },
-            "scope": 155,
+            "scope": 157,
             "src": "179:93:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 156,
+        "scope": 158,
         "src": "119:156:1",
         "usedErrors": []
       }
@@ -3880,21 +3880,21 @@
     "absolutePath": "project:/src/contracts/ERC721Connector.sol",
     "exportedSymbols": {
       "ERC721": [
-        134
+        136
       ],
       "ERC721Connector": [
-        155
+        157
       ],
       "ERC721Metadata": [
-        194
+        196
       ]
     },
-    "id": 156,
+    "id": 158,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 136,
+        "id": 138,
         "literals": [
           "solidity",
           "^",
@@ -3907,11 +3907,11 @@
       {
         "absolutePath": "project:/src/contracts/ERC721Metadata.sol",
         "file": "./ERC721Metadata.sol",
-        "id": 137,
+        "id": 139,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 156,
-        "sourceUnit": 195,
+        "scope": 158,
+        "sourceUnit": 197,
         "src": "61:30:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3919,11 +3919,11 @@
       {
         "absolutePath": "project:/src/contracts/ERC721.sol",
         "file": "./ERC721.sol",
-        "id": 138,
+        "id": 140,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 156,
-        "sourceUnit": 135,
+        "scope": 158,
+        "sourceUnit": 137,
         "src": "93:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3933,25 +3933,25 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 139,
+              "id": 141,
               "name": "ERC721Metadata",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 194,
+              "referencedDeclaration": 196,
               "src": "147:14:1"
             },
-            "id": 140,
+            "id": 142,
             "nodeType": "InheritanceSpecifier",
             "src": "147:14:1"
           },
           {
             "baseName": {
-              "id": 141,
+              "id": 143,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 134,
+              "referencedDeclaration": 136,
               "src": "163:6:1"
             },
-            "id": 142,
+            "id": 144,
             "nodeType": "InheritanceSpecifier",
             "src": "163:6:1"
           }
@@ -3960,11 +3960,11 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 155,
+        "id": 157,
         "linearizedBaseContracts": [
-          155,
-          134,
-          194
+          157,
+          136,
+          196
         ],
         "name": "ERC721Connector",
         "nameLocation": "128:15:1",
@@ -3972,23 +3972,23 @@
         "nodes": [
           {
             "body": {
-              "id": 153,
+              "id": 155,
               "nodeType": "Block",
               "src": "262:10:1",
               "statements": []
             },
-            "id": 154,
+            "id": 156,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 149,
+                    "id": 151,
                     "name": "name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 144,
+                    "referencedDeclaration": 146,
                     "src": "248:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -3996,11 +3996,11 @@
                     }
                   },
                   {
-                    "id": 150,
+                    "id": 152,
                     "name": "symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 146,
+                    "referencedDeclaration": 148,
                     "src": "254:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -4008,13 +4008,13 @@
                     }
                   }
                 ],
-                "id": 151,
+                "id": 153,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 148,
+                  "id": 150,
                   "name": "ERC721Metadata",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 194,
+                  "referencedDeclaration": 196,
                   "src": "233:14:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -4025,17 +4025,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 147,
+              "id": 149,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 144,
+                  "id": 146,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "205:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 154,
+                  "scope": 156,
                   "src": "191:18:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4044,7 +4044,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 143,
+                    "id": 145,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:6:1",
@@ -4057,12 +4057,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 146,
+                  "id": 148,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "225:6:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 154,
+                  "scope": 156,
                   "src": "211:20:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4071,7 +4071,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 145,
+                    "id": 147,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "211:6:1",
@@ -4086,19 +4086,19 @@
               "src": "190:42:1"
             },
             "returnParameters": {
-              "id": 152,
+              "id": 154,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "262:0:1"
             },
-            "scope": 155,
+            "scope": 157,
             "src": "179:93:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 156,
+        "scope": 158,
         "src": "119:156:1",
         "usedErrors": []
       }
@@ -4111,7 +4111,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.5",
-  "updatedAt": "2022-02-22T18:17:16.716Z",
+  "updatedAt": "2022-02-23T17:54:11.075Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
