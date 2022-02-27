@@ -60,7 +60,8 @@ contract ERC721 {
         return owner != address(0);
     }
 
-    function _mint(address to, uint256 tokenId) internal {
+    // this function will be override in ERC721Enumerable.sol - mark with virtual
+    function _mint(address to, uint256 tokenId) internal virtual {
         // require that the address is not zero (it is a valid address)
         require(to != address(0), 'ERC721: minting to a zero address');
         // require that the tokenId doesn't exist (was not minted previously)
