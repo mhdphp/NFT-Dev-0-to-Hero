@@ -36,7 +36,7 @@ contract ERC721 {
     ///  function throws for queries about the zero address.
     /// @param _owner An address for whom to query the balance
     /// @return The number of NFTs owned by `_owner`, possibly zero
-    function balanceOf(address _owner) external view returns (uint256){
+    function balanceOf(address _owner) public view returns (uint256){
         require(_owner != address(0), "_owner address should not be 0");
         return _OwnedTokensCount[_owner];
     }
