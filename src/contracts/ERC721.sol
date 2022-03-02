@@ -22,7 +22,14 @@ contract ERC721 {
     event Transfer(
         address indexed from, 
         address indexed to, 
-        uint256 indexed tokenId);
+        uint256 indexed tokenId
+    );
+
+    event Approval(
+        address indexed owner,
+        address indexed approved,
+        uint256 indexed tokenId
+    );
 
     // mapping in solidity creates a hash table of key pair values
     // mapping from token id to the owner
@@ -106,7 +113,29 @@ contract ERC721 {
 
     // call the _transferFrom function - internal from this one
     function transferFrom(address _from, address _to, uint256 _tokenId) public payable{
+        require(isApprovedOrOwner(msg.sender, _tokenId));
         _transferFrom(_from, _to, _tokenId);
+    }
+
+    // 1. require that the person approving is the owner
+    // 2. require that the owner can not approve sending tokens to the owner
+    // 3. we are approving an address to a token id
+    // 4. update mapping _tokenApprovals
+    function approve(address _to, uint256 _tokenId) public {
+        address owner = ownerOf(_tokenId);
+        require(msg.sender == owner, 'Current caller is not the owner o f the current token!');
+        require(_to != owner, 'Error - approval to current owner');
+        
+        // update the _tokenApprovals to the address _to
+        _tokenApprovals[_tokenId] = _to;
+
+        emit Approval(owner, _to, _tokenId);
+    }
+
+    function isApprovedOrOwner(address spender, uint256 tokenId) internal view returns(bool){
+        require(_exists(tokenId), 'Token does not exists!');
+        address owner = ownerOf(tokenId);
+        return spender == owner; // here we need another function to check if the spender is approved
     }
 
 }
