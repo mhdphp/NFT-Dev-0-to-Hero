@@ -15,7 +15,9 @@ Building up the minting function
         - etc
 */
 
-contract ERC721 {
+import './ERC165.sol'; // ERC165.sol inherits IERC165.sol
+
+contract ERC721 is ERC165 {
 
     // address from - the contract address
     // address to - the owner address
