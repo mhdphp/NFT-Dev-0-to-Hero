@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
-contract ERC721Metadata {
+import './interfaces/IERC721Metadata.sol';
 
+
+contract ERC721Metadata is IERC721Metadata{
     string private _name;
     string private _symbol;
 
@@ -14,12 +16,11 @@ contract ERC721Metadata {
     // Only functions can be marked external. 
     // External functions are part of the contract interface and can be 
     // called from other contracts and transactions. 
-    function name() external view returns(string memory){
+    function name() external view override returns(string memory){
         return _name;
     }
 
-    function symbol() external view returns(string memory){
+    function symbol() external view override returns(string memory){
         return _symbol;
     }
-
 }
