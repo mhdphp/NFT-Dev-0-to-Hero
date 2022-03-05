@@ -5,7 +5,7 @@ import './ERC721.sol'; // in order to get access to the _mint and other function
 import './interfaces/IERC721Enumerable.sol';
 
 
-contract ERC721Enumerable is IERC721Enumerable, ERC721, {
+contract ERC721Enumerable is IERC721Enumerable, ERC721 {
 
     uint256[] private _allTokens;
 
@@ -16,6 +16,14 @@ contract ERC721Enumerable is IERC721Enumerable, ERC721, {
     // mapping from tokenId to index of the owner tokens list
     mapping(uint256 => uint256) private _owenedTokensIndex;
 
+    // signature for totalSupply(), tokenByIndex(), tokenOfOwnerByIndex()
+    constructor () {
+        _registerInterface(bytes4(
+            keccak256('totalSupply(bytes4)')^
+            keccak256('tokenByIndex(bytes4)')^
+            keccak256('tokenOfOwnerByIndex(bytes4)')
+        ));
+    }
 
     /// @notice Enumerate valid NFTs
     /// @dev Throws if `_index` >= `totalSupply()`.
