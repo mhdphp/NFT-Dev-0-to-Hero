@@ -3,12 +3,12 @@
 const assert = require('assert');
 
 // Kryptobird the name from 2_deploy_contracts.js
-const Kbird = artifacts.require('Kryptobird');
+const Kbird = artifacts.require('KryptoBird');
 
 // check for chai
 require('chai')
 .use(require('chai-as-promised'))
-.should()
+.should();
 
 contract('Kbird', (accounts) =>{
     let contract;
