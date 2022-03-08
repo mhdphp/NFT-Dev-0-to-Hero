@@ -67,5 +67,30 @@ contract('Kbird', (accounts) =>{
             // don't work
             //await contract.mint('http...1').should.be.rejected;
         });
+
+        describe('indexing', async()=>{
+            it('lists KryptoBirdz', async()=>{
+                // mint more krytpbirdz
+                await contract.mint('http...2');
+                await contract.mint('http...3');
+                await contract.mint('http...4');
+                const totalSupply = await contract.totalSupply();
+
+                // loop through the kryptoBirdz[] from KryptoBirdz.sol
+                // add the results in a new javascript array
+                let result = [];
+                let kbird;
+                for (i=1; i<=4; i++){
+                    // here are round brackets
+                    kbird = await contract.kryptoBirdz(i-1); // index starts at 0
+                    result.push(kbird);
+                }
+
+                let expected = ['http...1','http...2','http...3','http...4'];
+                assert.equal(result.join(','), expected.join(','));
+                console.log('expected', expected.join(','));
+                console.log('result', result.join(','));
+            });
+        });
     });
 });
